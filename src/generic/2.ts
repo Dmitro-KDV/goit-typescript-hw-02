@@ -15,7 +15,7 @@ type AllTypeTop = Pick<AllType, 'name' | 'color'>;
 type AllTypeBottom = Pick<AllType, 'position' | 'weight'>;
 
 
-function compare (top: AllTypeTop, bottom: AllTypeBottom) {
+function compare (top: AllTypeTop, bottom: AllTypeBottom) :AllType {
   return {
     name: top.name,
     color: top.color,
